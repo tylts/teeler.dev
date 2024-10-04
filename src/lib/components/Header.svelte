@@ -10,11 +10,6 @@
 </header>
 
 <style>
-	header {
-		padding: 1rem;
-		background: lightskyblue;
-	}
-
 	ul {
 		margin: 0;
 		padding: 0;
@@ -25,6 +20,5 @@
 
 	a {
 		text-decoration: none;
-		color: inherit;
 	}
 </style>

@@ -1,27 +1,84 @@
-/* * {
-	border: 1px solid black;
-} */
+// * {
+// 	border: 1px solid black;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+	font-family: Metropolis;
+	src: url(/src/lib/fonts/Metropolis/Metropolis-BlackItalic.ttf);
+}
+
+@font-face {
+	font-family: Rubik;
+	src: url(/src/lib/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.1rem;
+	background-color: hsl(240, 100%, 5%);
+}
 
 body {
-	margin: 0;
-	background: #eee;
-	color: #333;
-	font-family: sans-serif;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	max-width: 45rem;
+	margin: 0 auto;
+	padding: 22px 0;
 }
 
 main {
-	padding: 1rem;
-	margin: 2rem auto;
-	max-width: 55rem;
+	flex: auto;
+	padding-top: 8rem;
+}
+
+a {
+	color: white;
+}
+
+.title {
+	margin-bottom: 20px;
 }
 
 .shiki {
 	padding: 1rem;
 	border-radius: 4px;
+	max-width: 30rem;
+	overflow: scroll;
+	scrollbar-color: hsl(240, 100%, 5%) white;
+	scrollbar-width: thin;
 }
 
-.shiki .line {
+.shiki {
 	line-height: 2;
+}
+
+h1 {
+	font-size: 4.4rem;
+	margin: 50px 0;
+}
+
+h2 {
+	font-size: 2.3rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Metropolis', sans-serif;
 }
 
 :where(h2, h3, h4, h5, h6) {

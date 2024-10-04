@@ -11,12 +11,21 @@
 <ul>
 	{#each data.posts as post}
 		<li>
-			<h2>
+			<h2 class="title">
 				<a href={post.path}>
 					{post.meta.title}
 				</a>
 			</h2>
-			Published {post.meta.date}
+			{post.meta.date}
 		</li>
 	{/each}
 </ul>
+
+<style>
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+	}
+</style>

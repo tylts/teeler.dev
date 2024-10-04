@@ -1,9 +1,11 @@
-<footer class="footer">FOOT</footer>
+<script>
+	const year = new Date().getFullYear();
+</script>
+
+<footer class="footer">&copy; {year} Tyler Cave</footer>
 
 <style>
-	.footer {
-		position: fixed;
-		margin: 1rem;
-		bottom: 0;
+	footer {
+		justify-self: end;
 	}
 </style>
