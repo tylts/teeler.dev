@@ -13,13 +13,13 @@
 	<meta property="og:title" content={data.title} />
 </svelte:head>
 
-{#if data.categories.length}
+{#if data.tags.length}
 	<aside>
 		<h2>Posted in:</h2>
 		<ul>
-			{#each data.categories as category}
+			{#each data.tags as tag}
 				<li>
-					<a href="/blog/category/{category}">{category}</a>
+					<a href="/blog/tag/{tag}">{tag}</a>
 				</li>
 			{/each}
 		</ul>

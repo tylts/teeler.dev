@@ -7,5 +7,7 @@
 <style>
 	footer {
 		justify-self: end;
+		padding-bottom: 2rem;
+		margin-top: 200px;
 	}
 </style>

@@ -2,7 +2,7 @@
 	export let data;
 </script>
 
-<h1>Category: {data.category}</h1>
+<h1>Tag: {data.tag}</h1>
 
 {#if data.posts.length}
 	<ul>

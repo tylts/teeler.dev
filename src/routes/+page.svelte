@@ -3,3 +3,4 @@
 </svelte:head>
 
 <h1>HELLO</h1>
+<p>Thank you for visiting.</p>

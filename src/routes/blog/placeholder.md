@@ -1,9 +1,10 @@
 ---
 title: Placeholder
 date: 'November 1, 2024'
-categories:
+tags:
   - 'numbers'
   - 'even'
+excerpt: 'In today’s fast-paced world, effective time management is a crucial skill. Whether you’re balancing personal responsibilities, work commitments, or both, learning how to prioritize tasks can significantly improve productivity.'
 ---
 
 ## The Importance of Time Management for Productivity
