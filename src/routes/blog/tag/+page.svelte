@@ -1,12 +1,17 @@
 <script>
 	export let data;
 	const tags = new Set([].concat(...data.allTags));
+	import TagList from '$lib/components/TagList.svelte';
 </script>
 
-{#each tags as tag}
-	<ul>
-		<li>
-			<a href="/blog/tag/{tag}">{tag}</a>
-		</li>
-	</ul>
-{/each}
+<h1>All tags:</h1>
+
+<div class="tags">
+	<TagList {tags} />
+</div>
+
+<style>
+	.tags {
+		margin-top: 5rem;
+	}
+</style>

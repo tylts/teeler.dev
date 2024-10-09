@@ -15,10 +15,10 @@
 }
 
 :root {
-	--h1: 4rem;
-	--h2: 3rem;
-	--h3: 2rem;
-	--p: 1rem;
+	--h1: 4.4rem;
+	--h2: 3.4rem;
+	--h3: 2.4rem;
+	--p: 1.4rem;
 }
 
 * {
@@ -71,6 +71,8 @@ h3 {
 
 p {
 	font-size: var(--p);
+	line-height: 2rem;
+	margin: 2rem 0;
 }
 
 a:hover {

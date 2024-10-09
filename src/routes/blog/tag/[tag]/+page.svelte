@@ -1,22 +1,14 @@
 <script>
 	export let data;
+	import PostList from '$lib/components/PostList.svelte';
 </script>
 
-<h1>Tag: {data.tag}</h1>
+<h1 class="title">#{data.tag}</h1>
 
-{#if data.posts.length}
-	<ul>
-		{#each data.posts as post}
-			<li>
-				<h2>
-					<a href={post.path}>
-						{post.meta.title}
-					</a>
-				</h2>
-				Published {post.meta.date}
-			</li>
-		{/each}
-	</ul>
-{:else}
-	<h2>Oopsies! Doesn't look like there's anything here.</h2>
-{/if}
+<PostList posts={data.posts} />
+
+<style>
+	.title {
+		margin-bottom: 5rem;
+	}
+</style>

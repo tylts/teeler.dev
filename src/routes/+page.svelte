@@ -3,4 +3,18 @@
 </svelte:head>
 
 <h1>HELLO</h1>
-<p>Thank you for visiting.</p>
+
+<div class="content">
+	<p>Thank you for visiting.</p>
+	<p>
+		cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool
+		cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool cool
+		cool cool cool cool cool cool cool cool cool cool cool cool cool cool
+	</p>
+</div>
+
+<style>
+	.content {
+		margin-top: 5rem;
+	}
+</style>
