@@ -25,3 +25,9 @@
 		</ul>
 	</aside>
 {/if}
+
+<style>
+	h1 {
+		font-size: var(--h1);
+	}
+</style>

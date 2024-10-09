@@ -11,9 +11,6 @@
 
 <ul>
 	{#each data.posts as post, index}
-		<!-- {#if index === 0}
-			<hr />
-		{/if} -->
 		<li>
 			<h2 class="title">
 				<a href={post.path}>
@@ -27,8 +24,8 @@
 		</li>
 		<ul class="tags">
 			{#each post.meta.tags as tag}
-				<li class="tag">
-					<a href="/blog/tag/{tag}">#{tag}</a>
+				<li>
+					<a id="tag" href="/blog/tag/{tag}">#{tag}</a>
 				</li>
 			{/each}
 		</ul>
@@ -39,15 +36,16 @@
 </ul>
 
 <style>
+	h2 {
+		font-size: var(--h1);
+	}
+
 	ul {
 		padding: 0;
 	}
+
 	li {
 		list-style-type: none;
-	}
-
-	h2 {
-		font-size: 3rem;
 	}
 
 	hr {
@@ -57,12 +55,7 @@
 		opacity: 20%;
 	}
 
-	.title {
-		margin-top: 7px;
-	}
-
 	.date {
-		font-size: 0.8rem;
 	}
 
 	.excerpt {
@@ -74,24 +67,18 @@
 		gap: 2px;
 	}
 
-	.tag {
+	#tag {
 		border: 1px white solid;
-		border-radius: 12px;
+		color: hsl(240, 100%, 5%);
+		border-radius: 24px;
+		text-decoration: none;
 		padding: 3px 6px;
 		background-color: white;
-		transition: 0.2s background ease;
+		transition:
+			0.3s background ease,
+			0.4s color ease;
 		&:hover {
 			background: hsl(240, 100%, 5%);
-		}
-	}
-
-	.tag > a {
-		color: hsl(240, 100%, 5%);
-		font-size: 0.8rem;
-		vertical-align: middle;
-		text-decoration: none;
-		transition: 0.2s color ease;
-		&:hover {
 			color: white;
 		}
 	}
