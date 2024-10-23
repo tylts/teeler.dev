@@ -1,7 +1,6 @@
 <script>
 	export let data;
 	import PostList from '$lib/components/PostList.svelte';
-	console.log(data);
 </script>
 
 <svelte:head>
@@ -19,8 +18,9 @@
 <style>
 	.greeting {
 		margin-bottom: -2rem;
+		font-size: 4rem;
 	}
 	.content {
-		margin-bottom: 5rem;
+		margin-bottom: 6rem;
 	}
 </style>

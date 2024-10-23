@@ -4,7 +4,6 @@
 	export let posts;
 </script>
 
-<hr />
 <ul>
 	{#each posts as post, index}
 		<li>
