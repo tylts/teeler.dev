@@ -385,12 +385,12 @@
 <style>
 	@font-face {
 		font-family: calculator;
-		src: url(src/lib/fonts/Digital-7/digital-7.ttf);
+		src: url(/fonts/Digital-7/digital-7.ttf);
 	}
 
 	@font-face {
 		font-family: Roboto;
-		src: url(src/lib/fonts/Roboto/Roboto-Regular.ttf);
+		src: url(/fonts/Roboto/Roboto-Regular.tff);
 	}
 
 	:root {

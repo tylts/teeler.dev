@@ -4,12 +4,12 @@
 
 @font-face {
 	font-family: Metropolis;
-	src: url(/src/lib/fonts/Metropolis/Metropolis-BlackItalic.ttf);
+	src: url(/fonts/Metropolis/Metropolis-BlackItalic.ttf);
 }
 
 @font-face {
 	font-family: Rubik;
-	src: url(/src/lib/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+	src: url(/fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }
 
 :root {
