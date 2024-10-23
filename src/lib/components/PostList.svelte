@@ -4,6 +4,7 @@
 	export let posts;
 </script>
 
+<hr />
 <ul>
 	{#each posts as post, index}
 		<li>
@@ -32,7 +33,7 @@
 
 <style>
 	h2 {
-		font-size: var(--h1);
+		font-size: var(--h2);
 	}
 
 	ul {

@@ -2,8 +2,6 @@
 	border: 1px solid white;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 @font-face {
 	font-family: Metropolis;
 	src: url(/src/lib/fonts/Metropolis/Metropolis-BlackItalic.ttf);
@@ -15,10 +13,11 @@
 }
 
 :root {
-	--h1: 4.4rem;
-	--h2: 3.4rem;
-	--h3: 2.4rem;
-	--p: 1.4rem;
+	font-size: 16px;
+	--h1: 3.4rem;
+	--h2: 2.4rem;
+	--h3: 1.6rem;
+	--p: 1.1rem;
 }
 
 * {
@@ -33,15 +32,16 @@ body {
 	height: 100%;
 	font-family: 'Rubik', sans-serif;
 	background-color: hsl(240, 100%, 5%);
+	scrollbar-gutter: stable;
 }
 
 body {
 	color: white;
 	display: flex;
 	flex-direction: column;
-	max-width: 45rem;
-	margin: 0 200px;
-	padding: 22px 0;
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: 2rem 0.5rem;
 }
 
 header {
@@ -59,19 +59,22 @@ a {
 
 h1 {
 	font-size: var(--h1);
+	font-weight: 300;
 }
 
 h2 {
 	font-size: var(--h2);
+	font-weight: 300;
 }
 
 h3 {
 	font-size: var(--h3);
+	font-weight: 200;
 }
 
 p {
 	font-size: var(--p);
-	line-height: 2rem;
+	line-height: 2.2rem;
 	margin: 2rem 0;
 }
 
@@ -81,14 +84,12 @@ a:hover {
 
 .shiki {
 	padding: 1rem;
+	font-size: var(--p);
 	border-radius: 4px;
 	max-width: 30rem;
 	overflow: scroll;
 	scrollbar-color: hsl(240, 100%, 5%) white;
 	scrollbar-width: thin;
-}
-
-.shiki {
 	line-height: 2;
 }
 
