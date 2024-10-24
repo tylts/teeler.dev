@@ -1,15 +1,6 @@
 /* * {
 	border: 1px solid white;
 } */
-@font-face {
-	font-family: calculator;
-	src: url(/fonts/Digital-7/digital-7.ttf);
-}
-
-@font-face {
-	font-family: Roboto;
-	src: url(/fonts/Roboto/Roboto-Regular.tff);
-}
 
 @font-face {
 	font-family: Metropolis;
@@ -101,6 +92,7 @@ a:hover {
 	scrollbar-color: hsl(240, 100%, 5%) white;
 	scrollbar-width: thin;
 	line-height: 1.8;
+	tab-size: 30px;
 }
 
 h1,
