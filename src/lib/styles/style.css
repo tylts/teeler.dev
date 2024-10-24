@@ -140,4 +140,8 @@ h6 {
 		background-color: hsl(240, 100%, 5%);
 		z-index: 1;
 	}
+
+	.shiki {
+		max-width: 24rem;
+	}
 }
