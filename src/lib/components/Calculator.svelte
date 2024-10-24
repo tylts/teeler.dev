@@ -338,20 +338,6 @@
 
 <!-- <!DOCTYPE html> -->
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Calculator</title>
-		<link
-			rel="stylesheet preload prefetch"
-			href="digital-7.ttf"
-			as="text/css"
-			type="font/ttf"
-			crossorigin
-		/>
-
-		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
-	</head>
 	<body>
 		<div class="calc-container">
 			<div class="display-container">
