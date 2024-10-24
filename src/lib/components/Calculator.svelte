@@ -412,6 +412,7 @@
 		pointer-events: none;
 		border: 8px inset var(--calc-container);
 		border-radius: 4px;
+		color: var(--calc-container);
 	}
 
 	.calculator-buttons {
