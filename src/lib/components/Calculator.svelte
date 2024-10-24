@@ -383,16 +383,6 @@
 </html>
 
 <style>
-	@font-face {
-		font-family: calculator;
-		src: url(/fonts/Digital-7/digital-7.ttf);
-	}
-
-	@font-face {
-		font-family: Roboto;
-		src: url(/fonts/Roboto/Roboto-Regular.tff);
-	}
-
 	:root {
 		--display-equals: #4d5340;
 		--main-background: #c6bba3;
