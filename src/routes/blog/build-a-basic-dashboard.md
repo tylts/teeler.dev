@@ -75,7 +75,7 @@ At the end of this post, we'll have a responsive dashboard layout with a:
 
 .widget-section {
 	grid-area: widgets;
-	display: grid;
+	display: grid; /* grid-ception */
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
 }
@@ -106,6 +106,12 @@ At the end of this post, we'll have a responsive dashboard layout with a:
 
 **_[View on CodePen](https://codepen.io/tylts/pen/KKOyezz)_**
 
-## Okay but how?
+## Okay but what are we even doing?
 
 1. **Grid Template Areas**: We used named areas so we could visualize the layout with real human words. No robot talk. Also note the grid names in each corresponding child.
+
+2. **Responsive Design**: Let's talk about what the heck `1fr` means. `fr` is a fractional unit. `1fr` takes up 1 part of the available space. So when we remove the other units and only keep `1fr` in the columns in the new media query, this collapses all columns into one when the screen size is below 768px width! PRETTY NIFTY!!!
+
+3. **Nested Grids**: Grids in grids in grids. We can next grids within grids for extra grids!
+
+Try this layout in your next project and experiment with different configurations to better understand how Grid works!
