@@ -12,6 +12,12 @@
 	src: url(/fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }
 
+@counter-style magic {
+	system: cyclic;
+	symbols: ✨ 🪄 💫 🌟 🎱 🎩;
+	suffix: ' ';
+}
+
 :root {
 	font-size: 16px;
 	--h1: 3.4rem;
@@ -69,6 +75,16 @@ h2 {
 
 article > h2 {
 	margin: 2rem 0;
+}
+
+article > ul {
+	margin-left: 1.5rem;
+	line-height: 1.5rem;
+	list-style-type: magic;
+}
+
+article > ol {
+	margin-left: 1.5rem;
 }
 
 h3 {
@@ -129,7 +145,7 @@ h6 {
 
 @media (width <= 500px) {
 	body {
-		margin: 80px 12px 0px;
+		margin: 80px 12px 0px 22px;
 		max-width: 95%;
 		padding: 0;
 	}
@@ -141,6 +157,7 @@ h6 {
 		padding: 8px 8px 12px 12px;
 		top: 0;
 		background-color: hsl(240, 100%, 5%);
+		margin-left: 22px;
 		z-index: 1;
 	}
 
