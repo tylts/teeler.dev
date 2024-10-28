@@ -1,8 +1,11 @@
 export const prerender = true;
 
-export const load = ({ url }) => {
-	const currentRoute = url.pathname;
+export const load = async ({ fetch }) => {
+	const response = await fetch(`/api/posts`);
+	const posts = await response.json();
+	const allTags = posts.map((post) => post.meta.tags);
 	return {
-		currentRoute
+		posts,
+		allTags
 	};
 };

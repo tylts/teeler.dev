@@ -1,11 +1,11 @@
 ---
 title: Two Divverent Ways to Center a Div Using CSS
-date: 'September 15, 2024'
+date: 'September 8, 2024'
 tags:
   - 'css'
   - 'flexbox'
   - 'grid'
-excerpt: Automatic margins are so last year.
+excerpt: 'margin: 0 auto is so 2009.'
 ---
 
 ## Here are two quick and easy ways to center a div without reaching for margin auto!

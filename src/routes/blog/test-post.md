@@ -1,6 +1,6 @@
 ---
 title: Test Post
-date: 'August 10, 2024'
+date: 'July 10, 2024'
 tags:
   - 'numbers'
   - 'odd'

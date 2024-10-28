@@ -7,20 +7,21 @@
 	<title>Tyler Cave - Software Developer</title>
 </svelte:head>
 
-<h1 class="greeting">Hello! I'm Tyler.</h1>
+<div class="greeting-container">
+	<h1 class="greeting-header">Hello! I'm Tyler.</h1>
 
-<div class="content">
 	<p>I'm a software developer from Texas.</p>
 </div>
 
 <PostList posts={data.posts} />
 
 <style>
-	.greeting {
+	.greeting-header {
 		margin-bottom: -2rem;
 		font-size: 4rem;
 	}
-	.content {
+
+	.greeting-container {
 		margin-bottom: 6rem;
 	}
 </style>

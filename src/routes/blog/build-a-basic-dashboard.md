@@ -1,6 +1,6 @@
 ---
 title: Build a Basic Dashboard with Me in 10 Minutes - Using CSS Grid
-date: 'September 29, 2024'
+date: 'October 25, 2024'
 tags:
   - 'css'
   - 'grid'
