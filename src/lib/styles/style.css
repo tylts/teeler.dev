@@ -136,13 +136,26 @@ a:hover {
 	margin-left: 100px;
 }
 
+.all-tags-container {
+	height: calc(100% - 83px);
+	grid-area: tags;
+	display: flex;
+}
+
 .all-tags {
 	width: 200px;
-	display: flex;
-	flex-direction: column;
-	margin-top: 75vh;
+	height: 200px;
 	position: fixed;
-	grid-area: tags;
+	bottom: 2rem;
+}
+
+.all-tags > ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.all-tags > ul > li {
+	display: flex;
 }
 
 .shiki {
@@ -213,7 +226,7 @@ h6 {
 		margin-left: 0;
 	}
 
-	.all-tags {
+	.all-tags-container {
 		display: none;
 	}
 

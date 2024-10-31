@@ -9,9 +9,11 @@
 
 <div class="layout">
 	<Header class="header" />
-	<aside class="all-tags">
-		<h2>All tags:</h2>
-		<TagList {tags} />
+	<aside class="all-tags-container">
+		<div class="all-tags">
+			<h2>All tags:</h2>
+			<TagList {tags} />
+		</div>
 	</aside>
 	<main>
 		<slot />
