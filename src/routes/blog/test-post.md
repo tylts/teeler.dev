@@ -2,8 +2,7 @@
 title: Test Post
 date: 'July 10, 2024'
 tags:
-  - 'numbers'
-  - 'odd'
+  - 'test'
 excerpt: 'Do not delete!'
 ---
 

@@ -100,13 +100,13 @@ function division(a, b) {
 }
 ```
 
-### State Management Flow<br><br>
+<!-- ### State Management Flow<br><br>
 
 1. Initial input:<br>- Clears display if needed.<br>- Updates display with the clicked/typed number.<br><br>
 2. Operator selection:<br>- Stores first number.<br>- Sets operator.<br>- Prepares for second number.<br><br>
 3. Second number input:<br>- Updates display.<br>- Stores second number.<br><br>
 4. Equals operation:<br>- Performs calculation<br>- Updates display<br>- Handles chained equals operations.<br><br>
-5. Clear operation:<br>- Resets all variables<br>- Return display to `0`<br><br>
+5. Clear operation:<br>- Resets all variables<br>- Return display to `0`<br><br> -->
 
 ### Bonus features
 
