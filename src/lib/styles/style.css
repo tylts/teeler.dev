@@ -100,6 +100,11 @@ article > ol {
 	margin-left: 1.5rem;
 }
 
+article > ol > li {
+	line-height: 1.5rem;
+	/* padding-inline-start: 2rem; */
+}
+
 aside > ul {
 	display: flex;
 	flex-flow: row wrap;
@@ -168,6 +173,7 @@ a:hover {
 	scrollbar-width: thin;
 	line-height: 1.8;
 	tab-size: 30px;
+	margin-bottom: 2rem;
 }
 
 h1,

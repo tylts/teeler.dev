@@ -3,7 +3,7 @@ import { createHighlighter } from 'shiki';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
-const theme = 'github-dark';
+const theme = 'aurora-x';
 const highlighter = await createHighlighter({
 	themes: [theme],
 	langs: ['javascript', 'typescript', 'html', 'css']

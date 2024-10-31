@@ -19,11 +19,37 @@ Well for starters, [this one looks kinda dope](https://tylts.github.io/calculato
 
 I built this over the course of a few days as a challenge to start and finish something completely from a blank slate. All in all it took me around 7 hours to get to its current point. I'll probably look back on this fondly as the project that taught me most about JavaScript scoping and how some of the logic works. The code is a mess but I'll eventually come back and clean it up. The main goal here was to make something that works.
 
-## The Design
+## What does it do?
 
-I based the functionality on my iPhone's calculator because that's what I had on hand to test it all out. Keep hitting equal after an equation and the calculator will continue evaluating based on the previous calculation.
+1. It supports mouse and keyboard input.
+2. It handles chained operations correctly (like 2+3+16).
+3. Special handling for percentages depending on the context of the operation.
+4. Error handling!
+5. Maintains state for repeating operations with the equals key.
+6. Most importantly... basic MATH!
 
-The basic brain of the calculator is the `operate()` function that takes in a few parameters (`a, b, operator`):
+## Let's dive in!
+
+### Variables and state management
+
+These are listed up at the top. One day I'll shove these in an object.
+
+```js
+let firstNum = 0; // Stores the first operand
+let secondNum; // Stores the second operand
+let operator; // Stores the current operation (+, -, ×, ÷)
+let displayValue; // Uses the calculator's display element
+
+// State stuff
+let clearDisplayNextInput = true; // Whether to clear display on next input
+let operationChain = false; // Tracks chained operations (e.g., 2+3+16 etc)
+let equalsChain = false; // Tracks repeated equals operations
+let secondNumIsNext = false; // Whether next input will be second number
+```
+
+### Core operations
+
+The basic brain of the calculator is the `operate()` function that takes in a few parameters (`a, b, operator`). It also handles input validation and routes to the appropriate math function.
 
 ```js
 function operate(a, b, operator) {
@@ -73,6 +99,28 @@ function division(a, b) {
 	return a / b;
 }
 ```
+
+### State Management Flow<br><br>
+
+1. Initial input:<br>- Clears display if needed.<br>- Updates display with the clicked/typed number.<br><br>
+2. Operator selection:<br>- Stores first number.<br>- Sets operator.<br>- Prepares for second number.<br><br>
+3. Second number input:<br>- Updates display.<br>- Stores second number.<br><br>
+4. Equals operation:<br>- Performs calculation<br>- Updates display<br>- Handles chained equals operations.<br><br>
+5. Clear operation:<br>- Resets all variables<br>- Return display to `0`<br><br>
+
+### Bonus features
+
+- Chained operations.<br>- Allows for continuous calculations.<br>- Updates display after each operation.
+
+- Decimal handling<br>- Prevents multiple decimal points.<br>- Properly formats decimal numbers.
+
+- Percentage calculations<br>- Behavior depends on operator:<br>--- For `+ / -`: calculates percentage of first number.<br>--- For `× / ÷`: converts to decimal form.
+
+- Sign toggle<br>- Switches between positive and negative numbers.<br>- Updates display and internal state.
+
+## The Design
+
+I based the functionality on my iPhone's calculator because that's what I had on hand to test it all out. Keep hitting equal after an equation and the calculator will continue evaluating based on the previous calculation.
 
 The calculator uses keyboard inputs that I accomplished by using the `keydown` event listener.
 
