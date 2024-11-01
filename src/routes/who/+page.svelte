@@ -10,5 +10,5 @@
 </p>
 
 <p>
-	Here's my <a href="/Tyler Cave Resume.pdf">resume</a>.
+	Here's my <a href="/TylerCaveResume.pdf">resume</a>.
 </p>
