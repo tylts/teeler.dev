@@ -4,7 +4,7 @@
 			<li>
 				<a href="/">Home</a>
 			</li>
-			<li><a href="/projects">Projects</a></li>
+			<li><a href="/who">Who Am I?</a></li>
 		</ul>
 	</nav>
 </header>
@@ -15,7 +15,7 @@
 		padding: 0;
 		list-style-type: none;
 		display: flex;
-		gap: 1rem;
+		gap: 3rem;
 	}
 
 	a {
