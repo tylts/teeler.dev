@@ -137,8 +137,12 @@ a:hover {
 	grid-template-columns: 20vw 1fr;
 	grid-template-rows: auto 1fr auto;
 	min-height: 100%;
-	margin-left: 100px;
+	margin-left: 200px;
 }
+
+/* .layout > * {
+	border: 1px solid white;
+} */
 
 .all-tags-container {
 	height: calc(100% - 83px);
@@ -237,5 +241,14 @@ h6 {
 
 	.shiki {
 		max-width: 24rem;
+	}
+}
+
+@media (width >= 2100px) {
+	.layout {
+		margin-left: 400px;
+	}
+	main {
+		max-width: 60rem;
 	}
 }
