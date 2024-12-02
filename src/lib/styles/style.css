@@ -59,6 +59,10 @@ footer {
 }
 
 header {
+	margin-bottom: 4rem;
+}
+
+header {
 	grid-area: header;
 }
 

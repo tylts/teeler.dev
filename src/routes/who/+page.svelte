@@ -6,7 +6,7 @@
 
 <p>
 	You can find me on <a href="https://github.com/tylts">GitHub</a> and sometimes on
-	<a href="https://hachyderm.io/@teeler">Mastodon</a>.
+	<a href="https://bsky.app/profile/teeler.dev">Bluesky</a>.
 </p>
 
 <p>
