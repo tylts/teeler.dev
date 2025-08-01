@@ -1,6 +1,6 @@
 ---
 title: Basic Overview of JavaScript Closures
-date: 'September 16, 2024'
+date: 'February 18, 2025'
 tags:
   - 'javascript'
 excerpt: Closures are like backpacks.
