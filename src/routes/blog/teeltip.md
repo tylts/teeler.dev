@@ -1,8 +1,9 @@
 ---
 title: teelTip Test
-date: 'January 10, 2025'
+date: 'November 10, 2025'
 tags:
   - 'test'
+  - 'sql'
 excerpt: 'Do not delete!'
 ---
 
