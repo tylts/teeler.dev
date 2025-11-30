@@ -6,7 +6,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 const theme = 'aurora-x';
 const highlighter = await createHighlighter({
 	themes: [theme],
-	langs: ['javascript', 'typescript', 'html', 'css']
+	langs: ['javascript', 'typescript', 'html', 'css', 'sql']
 });
 
 const config = defineConfig({
