@@ -1,6 +1,6 @@
 ---
 title: Test Post
-date: 'July 10, 2024'
+date: 'January 10, 2025'
 tags:
   - 'test'
 excerpt: 'Do not delete!'

@@ -1,6 +1,6 @@
 ---
 title: How I Built a Calculator Using JavaScript
-date: 'April 14, 2025'
+date: 'October 14, 2025'
 tags:
   - 'projects'
   - 'javascript'

@@ -1,6 +1,6 @@
 ---
 title: Two Divverent Ways to Center a Div Using CSS
-date: 'January 9, 2025'
+date: 'July 9, 2025'
 tags:
   - 'css'
   - 'flexbox'
