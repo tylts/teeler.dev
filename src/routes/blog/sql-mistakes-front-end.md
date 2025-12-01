@@ -26,7 +26,7 @@ FROM customers;
 
 and maybe it's not a huge deal when your database is small. But the moment your table grows or somebody adds columns you don't need in the query, your API quickly becomes overloaded with unused data. This could result in slower fetches, longer parsing time, and harder debugging.
 
-#### The fix:
+### The fix:
 
 Specificity! You will rarely need _everything_.
 
@@ -48,7 +48,7 @@ FROM orders;
 
 Hope you're ready to render 300,000 rows with this query that returned 20 years of order history. Let's tighten it up a little.
 
-#### The fix:
+### The fix:
 
 ```sql
 SELECT id, order_status
@@ -56,7 +56,7 @@ FROM orders
 WHERE user_id = $1;
 ```
 
-> _The `$` is a positional parameter for a function or a stored procedure in PostgreSQL databases. [Learn more here](https://www.postgresql.org/docs/8.1/sql-expressions.html#AEN1626)!_
+> > _The `$` is a positional parameter for a function or a stored procedure in PostgreSQL databases. [Click here to learn more!](https://www.postgresql.org/docs/8.1/sql-expressions.html#AEN1626)_
 
 If the front end shows data for a specific order, product, or customer, your query should too.
 
@@ -70,7 +70,7 @@ FROM articles
 ORDER BY views DESC;
 ```
 
-#### The fix:
+### The fix:
 
 ```sql
 SELECT id, title, views
@@ -81,6 +81,6 @@ LIMIT 10;
 
 This is an easy one and fairly self explanatory once you see it in action, but once you learn to limit, your server will be very happy.
 
-### The wrap up
+## The wrap up
 
 Front-end bugs are often not from the front-end code itself. Small SQL mistakes can easily become UI weirdness. Learning how to spot these SQL flubs can really pay off. SQL can be fun when you stop fighting it. _Maybe_
