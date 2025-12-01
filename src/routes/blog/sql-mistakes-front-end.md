@@ -1,6 +1,9 @@
 ---
 title: Common SQL Mistakes Front-End Devs Make (and How to Fix Them)
 date: 'December 1, 2025'
+tags:
+  - 'sql'
+  - 'frontend'
 excerpt: "Has a query you've written returned 14,000 more rows than you'd expected? You might be entitled to compensation."
 ---
 
